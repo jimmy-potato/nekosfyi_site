@@ -152,7 +152,12 @@ ul {
     height: auto;
     display: block;
 }
-
+/*end chatgpt*/
+#musicplayerwindow {
+    width: 430px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
 /* Mobile Support */
 @media only screen and (max-width: 890px) {
     .container {
