@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- Credits to https://nonkiru.art for theme & draggable div code! -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cheesecake_style.css">
+    <title>Welcome to nekos.fyi</title>
+    <link rel="icon" type="image/x-icon" href="img/dronepixel.png">
+    <!--scripts for draggable divs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+
+    <!--draggable divs list-->
+    <script>
+        $( function() {
+            $( "#ggvidwindow" ).draggable();
+        });
+    </script>
+</head>
+
 <body>
-  <h2 class="cs-title" style="text-align:center;">nekos.fyi v1</h2>
-  <p class="cs-text" style="text-align:center;"> I have no idea what I'm doing.</p>
-  <center>
-  	<video width="688" height="512" autoplay controls>
-  		<source src="https://cdn.donmai.us/original/b8/c1/__doctor_and_goldenglow_arknights_drawn_by_dorkdragoon__b8c12ce52ef0795d80e55f169381dff9.mp4" type="video/mp4">
-    		Your browser does not support .mp4 files.
-  	</video>
-  </center>
+<h2 class= "cs-title" style = "text-align:center;">Welcome to my website (v1.1.0)</h2>
+<p class = "cs-text" style = "text-align:center;"> I have no idea what I'm doing.</p>
+
+<!--draggable div (video)-->
+<div class="container" id="ggvidwindow">
+    <div class="box_header"><!--top bar-->
+        <header>
+            <img style="float: left;" src="img/dronepixel.png" alt="">
+            &nbsp;goldenglow.mp4
+            <img style="float: right;" src="img/button_3.gif" alt="">
+            <img style="float: right;" src="img/button_2.gif" alt="">
+            <img style="float: right;" src="img/button_1.gif" alt="">
+        </header>
+    </div>
+
+    <video width="800" controls><!--main content-->
+        <source src="https://cdn.donmai.us/original/b8/c1/__doctor_and_goldenglow_arknights_drawn_by_dorkdragoon__b8c12ce52ef0795d80e55f169381dff9.mp4" type="video/mp4">
+    </video>
+</div>
+
 </body>
 </html>
-
