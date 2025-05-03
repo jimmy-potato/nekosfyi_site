@@ -138,6 +138,20 @@ ul {
     filter: brightness(97%) saturate(125%);
     cursor: pointer;
 }
+/* used chatgpt for this :( stops video from flowing out of div when width is too low */
+#ggvidwindow {
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#ggvidwindow video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+}
 
 /* Mobile Support */
 @media only screen and (max-width: 890px) {
