@@ -3,6 +3,6 @@ I don't know what I'm doing.
 
 
 Todo:
-add music player
-add visit counter
-add web neko
+-add visit counter
+-add custom cursor
+-cursor follower
