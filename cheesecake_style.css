@@ -158,6 +158,13 @@ ul {
     box-sizing: border-box;
     overflow: hidden;
 }
+/* for bocchi*/
+div.image {
+    position: fixed;
+    right: 0px;
+    bottom: -5px;
+    z-index: -1;
+}
 /* Mobile Support */
 @media only screen and (max-width: 890px) {
     .container {
