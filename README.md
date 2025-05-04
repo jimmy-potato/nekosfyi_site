@@ -9,3 +9,8 @@ Todo:
 -add custom cursor
 
 -cursor follower
+
+-make window buttons work
+
+-randomize songs
+
