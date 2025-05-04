@@ -159,7 +159,7 @@ ul {
     overflow: hidden;
 }
 /* for bocchi*/
-div.image {
+div.imagebottomright {
     position: fixed;
     right: 0px;
     bottom: -5px;
