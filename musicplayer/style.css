@@ -45,6 +45,11 @@
     font-weight:bold;
 }
 
+.track-image{
+    height: 200px; /* image height */
+    object-fit:contain
+}
+
 .material-icons{
     color:#B7B8CC;
 }

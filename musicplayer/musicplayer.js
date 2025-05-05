@@ -2,8 +2,9 @@
 let now_playing = document.querySelector(".now-playing");
 let track_name = document.querySelector(".track-name");
 let track_artist = document.querySelector(".track-artist");
-
-
+//imagetest
+let track_image = document.querySelector(".track-image");
+console.log(track_image);
 let playpause_btn = document.querySelector(".playpause-track");
 let next_btn = document.querySelector(".next-track");
 let prev_btn = document.querySelector(".prev-track");
@@ -29,26 +30,31 @@ let track_list = [
     {
         name:"Misty Memory (Day Version)",
         artist:"Monster Siren Records",
+        image:"https://files.catbox.moe/uvw3gd.jpg",
         path:"https://files.catbox.moe/z9zuz6.mp3"
     },
     {
         name:"mede:mede",
         artist:"Reol",
+        image:"https://files.catbox.moe/lec80s.jpg",
         path:"https://files.catbox.moe/hhiitv.mp3"
     },
     {
         name:"SloWMoTIoN",
         artist:"Pinocchio-P",
+        image:"https://files.catbox.moe/3z8oco.jpg",
         path:"https://files.catbox.moe/37kvor.mp3"
     },
     {
         name: "Solo Trip",
         artist:"Wataru Sena ft. Sana",
+        image:"https://files.catbox.moe/l41i1m.jpg",
         path: "https://files.catbox.moe/sbb6v2.mp3",
     },
     {
         name: "If We Could Weave Rainbows",
         artist:"Fhana",
+        image:"https://files.catbox.moe/whawa9.jpg",
         path: "https://files.catbox.moe/q1ioeo.mp3",
     },
 ];
@@ -67,6 +73,9 @@ function loadTrack(track_index){
     curr_track.load();
 
     // update details of the track
+    // testimage
+    track_image.src = track_list[track_index].image;
+    //testimage
     track_name.textContent = track_list[track_index].name;
     track_artist.textContent = track_list[track_index].artist;
     now_playing.textContent = "Playing " + (track_index + 1) + " of " + track_list.length;
