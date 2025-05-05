@@ -14,3 +14,7 @@ Todo:
 
 -randomize songs
 
+
+CREDITS:
+https://nonkiru.art for the base theme & draggable div code!
+https://adilene.net/ for the music player!
