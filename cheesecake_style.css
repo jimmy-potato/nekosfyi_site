@@ -103,7 +103,47 @@ ul {
     padding: 0;
 }
 
-.container {
+footer .container {
+    padding: 20px 0;
+    width: 100%;
+}
+
+header .container {
+    padding: 20px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Push content below fixed header */
+.page-wrapper {
+    padding-top: 60px;
+}
+
+/* Sticky sidebar */
+aside {
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+    background: #eee;
+    padding: 20px;
+}
+
+.container.content {
+    background: var(--secondary);
+    border: 1px solid var(--tertiary);
+    border-radius: 2px;
+    width: 1250px;
+    box-shadow: 2px 2px 0px var(--primary);
+    margin: 5px auto;
+    cursor: move;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+}
+.container.draggable {
     background: var(--secondary);
     border: 1px solid var(--tertiary);
     border-radius: 2px;
@@ -111,6 +151,11 @@ ul {
     box-shadow: 2px 2px 0px var(--primary);
     margin: 5px auto;
     cursor: move;
+}
+
+main {
+    background: #f9f9f9;
+    padding: 20px;
 }
 
 .box {
@@ -138,23 +183,23 @@ ul {
     filter: brightness(97%) saturate(125%);
     cursor: pointer;
 }
-/* used chatgpt for this :( stops video from flowing out of div when width is too low */
+/* for video window*/
 #ggvidwindow {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 #ggvidwindow video {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     height: auto;
     display: block;
 }
-/*end chatgpt*/
+/*for music player*/
 #musicplayerwindow {
-    width: 430px;
+    width: 420px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -163,8 +208,9 @@ div.imagebottomright {
     position: fixed;
     right: 0px;
     bottom: -5px;
-    z-index: -1;
+    z-index: 10;
 }
+
 /* Mobile Support */
 @media only screen and (max-width: 890px) {
     .container {
