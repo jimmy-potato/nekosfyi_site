@@ -18,8 +18,7 @@ https://adilene.net/ for the music player!
     <!--scripts for draggable divs-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
-
-    <!--draggable divs list-->
+    <!--initialize draggable divs-->
     <script>
         $( function() {
             $( "#ggvidwindow" ).draggable();
@@ -86,10 +85,11 @@ https://adilene.net/ for the music player!
                 <th>Cell 1</th>
                 <th>Cell 2</th>
             </tr>
+            <tr>
             <td>Description 1</td>
             <td>Description 2</td>
             </tr>
-            </tr>
+            <tr>
             <td>Description 3</td>
             <td>Description 4</td>
             </tr>
@@ -185,7 +185,7 @@ https://adilene.net/ for the music player!
 
 <!--draggable div (video)-->
 <div class="container draggable" id="ggvidwindow" style="position: sticky; top: -1300px; left: 100px;">
-    <div class="box_header"><!--top bar-->
+    <div class="box_header draggable"><!--top bar-->
         <header>
             <img style="float: left;" src="img/dronepixel.png" alt="">
             &nbsp;goldenglow.mp4
@@ -202,7 +202,7 @@ https://adilene.net/ for the music player!
 
 <!--draggable div (music player)-->
 <div class="container draggable" id="musicplayerwindow" style="position: sticky; top: -1400px; left: 300px;">
-    <div class="box_header"><!--top bar-->
+    <div class="box_header draggable"><!--top bar-->
         <header>
             <img style="float: left;" src="img/dronepixel.png" alt="">
             &nbsp;musicplayer.exe
@@ -281,11 +281,11 @@ https://adilene.net/ for the music player!
         div.addEventListener('mousedown', function () {
             // Reset z-index of all divs
             document.querySelectorAll('.container.draggable').forEach(function (d) {
-                d.style.zIndex = 1;  // Reset all z-index to 1
+                d.style.zIndex = "1";  // Reset all z-index to 1
             });
 
             // Set the z-index of the clicked div to a higher value
-            this.style.zIndex = 10;
+            this.style.zIndex = "10";
         });
     });
 </script>

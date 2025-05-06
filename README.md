@@ -14,6 +14,8 @@ Todo:
 
 -randomize songs
 
+-fix cursor icons for draggables
+
 
 CREDITS:
 
