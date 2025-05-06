@@ -10,7 +10,7 @@ Todo:
 
 -cursor follower
 
--make window buttons work
+-make window buttons work (1/3)
 
 -randomize songs
 
