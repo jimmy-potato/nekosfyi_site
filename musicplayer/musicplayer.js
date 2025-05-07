@@ -53,7 +53,7 @@ let track_list = [
     {
         name:"SloWMoTIoN",
         artist:"PinocchioP",
-        image:"https://files.catbox.moe/3z8oco.jpg",
+        image:"https://files.catbox.moe/bfcs3n.jpg",
         path:"https://files.catbox.moe/37kvor.mp3"
     },
     {
