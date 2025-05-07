@@ -1,27 +1,18 @@
-This is my first website.
-I don't know what I'm doing.
+![nekos.fyi logo](https://github.com/jimmy-potato/jimmy-potato.github.io/blob/main/img/websitelogo.png)
+
+This is my first website. I don't know what I'm doing.
 
 
-Todo (code):
+# to do
+### code:
+1. add visitor counter
+2. cursor follower
+3. make window buttons work (1/3)
 
--add visit counter
+### content:
+1. basically everything
 
-
--cursor follower?
-
-
--make window buttons work (1/3)
-
-
-Todo (content):
-
-
-basically everything
-
-
-
-CREDITS:
-
-https://nonkiru.art for the base theme & draggable div code!
-
-https://adilene.net/ for the music player!
+# credits:
+* [nonkiru.art](https://nonkiru.art/) for base theme
+* [adilene.net](https://adilene.net/) for music player
+* [petrapixel.neocities.org](https://petrapixel.neocities.org/) for helpful resources
