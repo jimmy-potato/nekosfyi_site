@@ -24,11 +24,19 @@ let updateTimer;
 // create new audio element
 let curr_track = document.getElementById("music");
 
-//
-// DEFINE YOUR SONGS HERE!!!!!
-// MORE THAN FOUR SONGS CAN BE ADDED!!
-// JUST ADD ANOTHER BRACKET WITH NAME ARTIST AND PATH
-// CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES IF YOU DON'T HAVE NEOCITIES SUPPORTER
+// ADD SONGS HERE
+// UPLOAD FILES TO catbox.moe OR STORE LOCALLY
+
+/* ADD SONG TEMPLATE
+
+{
+    name: "songname",
+    artist:"artistname",
+    image:"imageurl",
+    path: "mp3url",
+},
+
+*/
 let track_list = [
     {
         name:"Misty Memory (Day Version)",
@@ -44,28 +52,54 @@ let track_list = [
     },
     {
         name:"SloWMoTIoN",
-        artist:"Pinocchio-P",
+        artist:"PinocchioP",
         image:"https://files.catbox.moe/3z8oco.jpg",
         path:"https://files.catbox.moe/37kvor.mp3"
     },
     {
-        name: "Solo Trip",
-        artist:"Wataru Sena ft. Sana",
+        name: "ひとり旅",
+        artist:"瀬名航 ft. 鎖那",
         image:"https://files.catbox.moe/l41i1m.jpg",
         path: "https://files.catbox.moe/sbb6v2.mp3",
     },
     {
-        name: "If We Could Weave Rainbows",
+        name: "虹を編めたら",
         artist:"Fhana",
         image:"https://files.catbox.moe/whawa9.jpg",
         path: "https://files.catbox.moe/q1ioeo.mp3",
     },
+    {
+        name: "しあわせになんてならないで",
+        artist:"Aiobahn ft. ナナヲアカリ",
+        image:"https://files.catbox.moe/vx4ord.jpg",
+        path: "https://files.catbox.moe/8g8qul.mp3",
+    },
+    {
+        name: "Sebatas Video Call",
+        artist:"Kobo Kanaeru",
+        image:"https://files.catbox.moe/ue2cwb.jpg",
+        path: "https://files.catbox.moe/e6da8x.mp3",
+    },
+    {
+        name: "Routine",
+        artist:"Silent Siren",
+        image:"https://files.catbox.moe/gtdalz.jpg",
+        path: "https://files.catbox.moe/unjgu9.mp3",
+    },
+    {
+        name: "Drop Pop Candy",
+        artist:"Reol",
+        image:"https://files.catbox.moe/g0v380.jpg",
+        path: "https://files.catbox.moe/oamv16.mp3",
+    },
+    {
+        name: "Divinity",
+        artist:"Porter Robinson ft. Amy Millan",
+        image:"https://files.catbox.moe/zn43fb.jpg",
+        path: "https://files.catbox.moe/7u2hew.mp3",
+    },
 ];
-//
-//
-//
-//
-//
+
 
 function loadTrack(track_index){
     clearInterval(updateTimer);
