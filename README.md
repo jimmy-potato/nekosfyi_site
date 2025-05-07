@@ -5,7 +5,7 @@
 This is my first website. I don't know what I'm doing.
 
 
-# to do
+# to do:
 ### code:
 1. add visitor counter
 2. cursor follower
