@@ -1,5 +1,7 @@
 ![nekos.fyi logo](https://github.com/jimmy-potato/jimmy-potato.github.io/blob/main/img/websitelogo.png)
 
+[nekos.fyi](https://www.nekos.fyi/)
+
 This is my first website. I don't know what I'm doing.
 
 
