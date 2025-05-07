@@ -163,7 +163,7 @@ main {
     line-height: 20px;
 }
 .box_header.draggable {
-    cursor: url('cursor/move.png'), move;
+    cursor: url('cursor/move.png') 16 16, move;
 }
 
 
