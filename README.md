@@ -2,16 +2,21 @@ This is my first website.
 I don't know what I'm doing.
 
 
-Todo:
+Todo (code):
 
 -add visit counter
 
 
--cursor follower
+-cursor follower?
+
 
 -make window buttons work (1/3)
 
--make volume and seeker sliders work
+
+Todo (content):
+
+
+basically everything
 
 
 
