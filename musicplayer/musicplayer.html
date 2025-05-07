@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- needed for slider/buttons-->
+        <!-- needed for slider/ (needed for music player)-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
 
-        <!--scripts for draggable divs-->
+        <!--scripts for draggable divs (not necessary for music player)-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+
         <!--initialize draggable divs-->
         <script>
             $(function() {
@@ -20,6 +21,9 @@
 
 
     <body>
+    <!--Everything inside is for the music player. Edit as needed.-->
+
+    <!--START CODE-->
     <div class="container draggable" id="musicplayerwindow">
 
         <!--top bar-->
@@ -78,5 +82,6 @@
 
         <script src="musicplayer.js"></script>
     </div>
+    <!--END CODE-->
     </body>
 </html>
