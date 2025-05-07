@@ -6,7 +6,7 @@ Todo:
 
 -add visit counter
 
--add custom cursor
+-add custom cursor (main one done)
 
 -cursor follower
 
@@ -14,7 +14,6 @@ Todo:
 
 -randomize songs
 
--fix cursor icons for draggables
 
 
 CREDITS:

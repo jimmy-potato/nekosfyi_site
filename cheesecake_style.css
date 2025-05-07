@@ -1,37 +1,19 @@
-/* This is a free layout for anyone to use!
-All I ask is that you keep this credit in-tact, or that you put my website link
-(https://nonkiru.art) somewhere on your site. 
-
-Otherwise, edit this as much as you'd like! 
-
-Last Updated: 8th December 2024 */
-
-/* These are the default colour codes for the layout.
-Changing the colour code here will update it for any element that uses it. */
 :root {
-    /* Default: Pink */
     --primary: #ffc9c6;
 
-    /* Default: Light Pink */
     --primary_light: #ffedeb;
 
-    /* Default: Dark Pink */
     --primary_dark: #ee918c;
 
-    /* Default: White */
     --secondary: #fefbf5;
 
-    /* Default: Brown */
     --tertiary: #ad4944;
 
-    /* Default: Blue */
     --link: #2453d4;
 }
-/* more cursors to be added*/
+
 body {
-    cursor: url('img/dronecursor.png') 0 0, auto;
-}
-body {
+    cursor: url('cursor/dronecursor.png') 0 0, default;
     background: var(--secondary);
     background-image: url(img/bg.gif);
     color: var(--tertiary);
@@ -45,6 +27,7 @@ a {
     color: var(--link);
     /* Adds a smooth effect to link hover. */
     transition: 0.1s all ease-in-out;
+    cursor: url('cursor/link.png') 0 0, pointer;
 }
 
 a:hover {
@@ -117,12 +100,19 @@ header .container {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 
 /* Push content below fixed header */
 .page-wrapper {
     padding-top: 60px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Sticky sidebar */
@@ -173,20 +163,20 @@ main {
     line-height: 20px;
 }
 .box_header.draggable {
-    cursor: move;
+    cursor: url('cursor/move.png'), move;
 }
 
 
 /* Changes the brightness of the fake buttons on hover. Also changes the cursor. */
-.box_header img:hover {
-    filter: brightness(103%);
-    cursor: pointer;
+img.functionalbutton:hover {
+    filter: brightness(110%);
+    cursor: url('cursor/ggcursor.png'), pointer;
 }
 
 /* Darkens and saturates the buttons on click. Also changes the cursor. */
-.box_header img:active {
+img.functionalbutton:active {
     filter: brightness(97%) saturate(125%);
-    cursor: pointer;
+    cursor: url('cursor/ggcursor.png'), pointer;
 }
 /* for video window*/
 #ggvidwindow {
@@ -217,11 +207,10 @@ div.imagebottomright {
 }
 
 /* Mobile Support */
-@media only screen and (max-width: 890px) {
-    .container {
+@media only screen and (max-width: 1250px) {
+    .container, .container.content,  .container.draggable {
         position: static;
-        width: 100%;
-        margin: unset;
+        width: 98%;
         margin-bottom: 5px;
     }
 }

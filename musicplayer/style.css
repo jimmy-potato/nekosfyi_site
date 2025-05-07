@@ -4,7 +4,7 @@
     /*border:4px solid #4cd4de; !* border around player *!*/
     width:400px; /* width of the player - make it 100% if you want it to fill your container */
     padding:10px;
-    text-align:center; 
+    text-align:center;
     display:flex;
     flex-direction:column;
     gap:10px;
@@ -15,8 +15,8 @@
 }
 
 .controls{
-    display:flex; 
-    flex-direction:column; 
+    display:flex;
+    flex-direction:column;
 }
 
 .buttons{
@@ -92,4 +92,22 @@ input[type=range]::-moz-range-thumb{
     border-radius:5px; /* change to 5px if you want a circle seeker */
     background:#646592; /* color of seeker square */
     border:none; /* removes weird border around seeker square in firefox */
+}
+
+/* for song list table*/
+.track-list-container {
+    max-height: 198px;
+    overflow-y: auto;   /* allows scrolling */
+    border: 1px solid;
+    margin-left: 10px;
+}
+
+.track-item {
+    text-align: left;
+    padding: 10px 5px;
+    cursor: url("../cursor/ggcursor.png"), pointer;
+}
+
+.track-item:hover {
+    background-color: #f0f0f0;
 }

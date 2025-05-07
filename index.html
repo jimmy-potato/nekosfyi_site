@@ -20,22 +20,32 @@ https://adilene.net/ for the music player!
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
     <!--initialize draggable divs-->
     <script>
-        $( function() {
-            $( "#ggvidwindow" ).draggable();
+        $(function() {
+            $('#ggvidwindow').draggable({
+                cancel: 'img.functionalbutton'
+            });
         });
     </script>
     <script>
-        $( function() {
-            $( "#musicplayerwindow" ).draggable();
+        $(function() {
+            $('#musicplayerwindow').draggable({
+                cancel: 'img.functionalbutton'
+            });
         });
     </script>
 </head>
 
 <body>
 
+<div class="center" style="padding-top: 100px;">
+    <img style="position: absolute; top: 0px; left: 50%; transform: translateX(-50%); z-index:101;" src="img/websitelogo.png" alt="">
+</div>
+
 <header>
     <div class="page-wrapper">
-        <div class="container content">Header content</div>
+        <div class="container content">
+            Header content
+        </div>
     </div>
 </header>
 
@@ -189,9 +199,9 @@ https://adilene.net/ for the music player!
         <header>
             <img style="float: left;" src="img/dronepixel.png" alt="">
             &nbsp;goldenglow.mp4
-            <img style="float: right;" src="img/button_3.gif" alt="" class="clickToHide layer3">
-            <img style="float: right;" src="img/button_2.gif" alt="">
-            <img style="float: right;" src="img/button_1.gif" alt="">
+            <img style="float: right;" src="img/button_3.gif" alt="" class="clickToHide layer3 functionalbutton">
+            <img style="float: right;" src="img/button_2.gif" alt="" class="functionalbutton">
+            <img style="float: right;" src="img/button_1.gif" alt="" class="functionalbutton">
         </header>
     </div>
 
@@ -202,27 +212,35 @@ https://adilene.net/ for the music player!
 
 <!--draggable div (music player)-->
 <div class="container draggable" id="musicplayerwindow" style="position: sticky; top: -1400px; left: 300px;">
-    <div class="box_header draggable"><!--top bar-->
+
+    <!--top bar-->
+    <div class="box_header draggable">
         <header>
             <img style="float: left;" src="img/dronepixel.png" alt="">
             &nbsp;musicplayer.exe
-            <img style="float: right;" src="img/button_3.gif" alt="" class="clickToHide layer3">
-            <img style="float: right;" src="img/button_2.gif" alt="">
-            <img style="float: right;" src="img/button_1.gif" alt="">
+            <img style="float: right;" src="img/button_3.gif" alt="" class="clickToHide layer3 functionalbutton">
+            <img style="float: right;" src="img/button_2.gif" alt="" class="functionalbutton">
+            <img style="float: right;" src="img/button_1.gif" alt="" class="functionalbutton">
         </header>
     </div>
     <div id="musicplayer">
         <div class="now-playing"></div>
-        <!-- start image attempt -->
-        <div>
-            <img class="track-image" src="" alt="track image" />
+
+        <!-- track image section -->
+        <div style="display: flex; align-items: center;">
+            <img style="width: 200px;" class="track-image" src="" alt="track image"/>
+
+            <!-- track list section -->
+            <div class="track-list-container"></div>
         </div>
-        <!-- end image attempt -->
+
+        <!-- track info section -->
         <div class="track-info">
             <div class="track-name"></div>
             <div class="track-artist"></div>
         </div>
 
+        <!-- controls -->
         <div class="controls">
             <div class="seeking">
                 <div class="current-time">00:00</div>
@@ -279,11 +297,9 @@ https://adilene.net/ for the music player!
 <script>
     document.querySelectorAll('.container.draggable').forEach(function (div) {
         div.addEventListener('mousedown', function () {
-            // Reset z-index of all divs
             document.querySelectorAll('.container.draggable').forEach(function (d) {
                 d.style.zIndex = "1";  // Reset all z-index to 1
             });
-
             // Set the z-index of the clicked div to a higher value
             this.style.zIndex = "10";
         });

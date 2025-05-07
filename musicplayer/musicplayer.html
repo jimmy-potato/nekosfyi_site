@@ -5,40 +5,50 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="musicplayer">
-            <div class="now-playing"></div>
-            
-            <div class="track-info">
-                <div class="track-name"></div>
-                <div class="track-artist"></div>
-            </div>
+    <div id="musicplayer">
+        <div class="now-playing"></div>
 
-            <div class="controls">
-                <div class="seeking">
-                    <div class="current-time">00:00</div>
+        <!-- track image section -->
+        <div style="display: flex; align-items: center;">
+            <img style="width: 200px;" class="track-image" src="" alt="track image"/>
 
-                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-
-                    <div class="total-duration">0:00</div>
-                </div>
-
-                <div class="buttons">
-                    <div class="prev-track" onclick="prevTrack()"><span class="material-icons">skip_previous</span></div>
-
-                    <div class="playpause-track" onclick="playpauseTrack()"><span class="material-icons" style="font-size:40px;">play_arrow</span></div>
-
-                    <div class="next-track" onclick="nextTrack()"><span class="material-icons">skip_next</span></div>
-                </div>
-
-                <div class="volume">
-                    <span class="material-icons" style="color:black;">volume_up</span>
-                    <input type="range" min="1" max="100" value="25" class="volume_slider" onchange="setVolume()"> <!-- the default volume value is 25, change this if you want it to be higher or lower (i wouldn't recommend it bc it gets really loud) -->
-                </div>
-            </div>
-
-            <audio id="music" src=""></audio>
+            <!-- track list section -->
+            <div class="track-list-container"></div>
         </div>
-        
+
+        <!-- track info section -->
+        <div class="track-info">
+            <div class="track-name"></div>
+            <div class="track-artist"></div>
+        </div>
+
+        <!-- controls -->
+        <div class="controls">
+            <div class="seeking">
+                <div class="current-time">00:00</div>
+
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+
+                <div class="total-duration">0:00</div>
+            </div>
+
+            <div class="buttons">
+                <div class="prev-track" onclick="prevTrack()"><span class="material-icons">skip_previous</span></div>
+
+                <div class="playpause-track" onclick="playpauseTrack()"><span class="material-icons" style="font-size:40px;">play_arrow</span></div>
+
+                <div class="next-track" onclick="nextTrack()"><span class="material-icons">skip_next</span></div>
+            </div>
+
+            <div class="volume">
+                <span class="material-icons" style="color:black;">volume_up</span>
+                <input type="range" min="1" max="100" value="25" class="volume_slider" onchange="setVolume()"> <!-- the default volume value is 25, change this if you want it to be higher or lower (I wouldn't recommend it bc it gets really loud) -->
+            </div>
+        </div>
+
+        <audio id="music" src=""></audio>
+    </div>
+
         <script src="musicplayer.js"></script>
     </body>
 </html>

@@ -2,9 +2,12 @@
 let now_playing = document.querySelector(".now-playing");
 let track_name = document.querySelector(".track-name");
 let track_artist = document.querySelector(".track-artist");
+
 //imagetest
 let track_image = document.querySelector(".track-image");
-console.log(track_image);
+//track list container
+let track_list_container = document.querySelector('.track-list-container');
+
 let playpause_btn = document.querySelector(".playpause-track");
 let next_btn = document.querySelector(".next-track");
 let prev_btn = document.querySelector(".prev-track");
@@ -73,9 +76,7 @@ function loadTrack(track_index){
     curr_track.load();
 
     // update details of the track
-    // testimage
     track_image.src = track_list[track_index].image;
-    //testimage
     track_name.textContent = track_list[track_index].name;
     track_artist.textContent = track_list[track_index].artist;
     now_playing.textContent = "Playing " + (track_index + 1) + " of " + track_list.length;
@@ -83,7 +84,7 @@ function loadTrack(track_index){
     // set an interval of 1000 milliseconds for updating the seek slider
     updateTimer = setInterval(seekUpdate, 1000);
 
-    // move to the next track if the current one finishes playing 
+    // move to the next track if the current one finishes playing
     curr_track.addEventListener("ended", nextTrack);
 
 }
@@ -147,7 +148,10 @@ function seekTo(){
 
 // volume slider
 function setVolume(){
-    curr_track.volume = volume_slider.value / 100;
+
+    //use expoential volume instead
+    curr_track.volume = Math.pow(volume_slider.value / 300, 2);
+    //curr_track.volume = volume_slider.value / 100;
 }
 
 setVolume();
@@ -176,3 +180,28 @@ function seekUpdate(){
         total_duration.textContent = durationMinutes + ":" + durationSeconds;
     }
 }
+
+function listToTable() {
+    const trackTable = document.createElement('table');
+    track_list.forEach((track, index) => {
+
+        // create row and cell for each song
+        const trackRow = document.createElement('tr');
+        const trackCell = document.createElement('td');
+        trackCell.classList.add('track-item');  // class to change style
+        trackCell.innerHTML = (index + 1) + ') ' + track.name;  // adds name and number to cells
+
+        // change song when clicked
+        trackCell.addEventListener('click', () => {
+            track_index = index;
+            loadTrack(track_index);  // Load the selected track
+            playTrack();             // Start playing the track
+        });
+
+        trackRow.appendChild(trackCell);
+        trackTable.appendChild(trackRow);
+    });
+    track_list_container.appendChild(trackTable);
+}
+
+listToTable();
