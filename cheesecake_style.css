@@ -3,6 +3,8 @@
 
     --primary_light: #ffedeb;
 
+    --primary_mid: #FCE2D3;
+
     --primary_dark: #ee918c;
 
     --secondary: #fefbf5;
@@ -32,6 +34,10 @@ a {
 
 a:hover {
     color: var(--primary_dark);
+}
+
+p {
+    overflow-wrap: break-word;
 }
 
 /* Header Styling */
@@ -79,6 +85,26 @@ table td, table th {
 table th {
     text-align: left;
     background-color: var(--primary_light);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+table.notepad th{
+    user-select: none;
+    text-align: left;
+    border: none;
+    background-color: var(--primary_mid);
+}
+/* Changes the brightness of the fake buttons on hover. Also changes the cursor. */
+table.notepad th:hover {
+    filter: brightness(107%);
+    cursor: url('cursor/ggcursor.png'), pointer;
+}
+
+/* Darkens and saturates the buttons on click. Also changes the cursor. */
+table.notepad th:active {
+    filter: brightness(93%) saturate(125%);
+    cursor: url('cursor/ggcursor.png'), pointer;
 }
 
 /* List Styling */
@@ -100,7 +126,7 @@ header .container {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 9;
 }
 
 /* Push content below fixed header */
@@ -124,24 +150,22 @@ aside {
     padding: 20px;
 }
 
-.container.content {
+.container {
     background: var(--secondary);
     border: 1px solid var(--tertiary);
     border-radius: 2px;
-    width: 1250px;
     box-shadow: 2px 2px 0px var(--primary);
     margin: 5px auto;
+}
+.container.frameonly {
+    width: 1250px;
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: 20px;
 }
+
 .container.draggable {
-    background: var(--secondary);
-    border: 1px solid var(--tertiary);
-    border-radius: 2px;
     width: 800px;
-    box-shadow: 2px 2px 0px var(--primary);
-    margin: 5px auto;
 }
 
 main {
@@ -177,33 +201,6 @@ img.functionalbutton:hover {
 img.functionalbutton:active {
     filter: brightness(97%) saturate(125%);
     cursor: url('cursor/ggcursor.png'), pointer;
-}
-/* for video window*/
-#ggvidwindow {
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-#ggvidwindow video {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-}
-/*for music player*/
-#musicplayerwindow {
-    width: 420px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-/* for bocchi*/
-div.imagebottomright {
-    position: fixed;
-    right: 0px;
-    bottom: -5px;
-    z-index: 10;
 }
 
 /* Mobile Support */
