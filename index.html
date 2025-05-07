@@ -9,27 +9,40 @@ https://adilene.net/ for the music player!
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cheesecake_style.css">
-<!-- These 2 are for music player (symbols, style)-->
+
+    <!-- These 2 are for music player (symbols, style)-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="musicplayer/style.css" rel="stylesheet">
 
     <title>Welcome to nekos.fyi</title>
     <link rel="icon" type="image/x-icon" href="img/dronepixel.png">
+
     <!--scripts for draggable divs-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+
     <!--initialize draggable divs-->
     <script>
         $(function() {
             $('#ggvidwindow').draggable({
-                cancel: 'img.functionalbutton, input[type=range]'
+                handle: '.box_header.draggable',
+                cancel: 'img.functionalbutton'
             });
         });
     </script>
     <script>
         $(function() {
             $('#musicplayerwindow').draggable({
-                cancel: 'img.functionalbutton, input[type=range]'
+                handle: '.box_header.draggable',
+                cancel: 'img.functionalbutton'
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('#notepadwindow').draggable({
+                handle: '.box_header.draggable',
+                cancel: 'img.functionalbutton'
             });
         });
     </script>
@@ -37,52 +50,35 @@ https://adilene.net/ for the music player!
 
 <body>
 
+<!-- site logo-->
 <div class="center" style="padding-top: 100px;">
-    <img style="position: absolute; top: 0px; left: 50%; transform: translateX(-50%); z-index:101;" src="img/websitelogo.png" alt="">
+    <img style="position: absolute; top: 0px; left: 50%; transform: translateX(-50%); z-index:10;" src="img/websitelogo.png" alt="">
 </div>
 
+<!-- header -->
 <header>
     <div class="page-wrapper">
-        <div class="container content">
-            Header content
+        <div class="container header" style="width: 1250px; height: 50px;">
+
+        </div>
+        <div class="container header" style="width: 1250px;">
+            <div>
+                <h1 style="font-size: 40px; text-align:center;">This website is under construction.</h1>
+            </div>
         </div>
     </div>
 </header>
 
-<div class="container content">
+<!-- main content-->
+<div class="container frameonly">
     <aside>
         Sidebar
         <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-            <li>four</li>
-            <li>five</li>
-            <li>six</li>
-            <li>seven</li>
-            <li>eight</li>
-            <li>nine</li>
-            <li>ten</li>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-            <li>four</li>
-            <li>five</li>
-            <li>six</li>
-            <li>seven</li>
-            <li>eight</li>
-            <li>nine</li>
-            <li>ten</li>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-            <li>four</li>
-            <li>five</li>
-            <li>six</li>
-            <li>seven</li>
-            <li>eight</li>
-            <li>nine</li>
-            <li>ten</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Credits</li>
+            <li>Resources</li>
+            <li>Github</li>
         </ul>
     </aside>
     <main>
@@ -189,35 +185,38 @@ https://adilene.net/ for the music player!
     </main>
 </div>
 
+<!-- footer -->
 <footer>
-    <div class="container content">Footer content</div>
+    <div class="container" style="width: 1250px;">
+        <p style="text-align:center">Made with ❤ by jimmy_potato 2025</p>
+    </div>
 </footer>
 
 <!--draggable div (video)-->
-<div class="container draggable" id="ggvidwindow" style="position: sticky; top: -1300px; left: 100px;">
+<div class="container draggable" id="ggvidwindow" style="width: 600px; position: sticky; top: -1300px; left: 100px;">
     <div class="box_header draggable"><!--top bar-->
         <header>
-            <img style="float: left;" src="img/dronepixel.png" alt="">
-            &nbsp;goldenglow.mp4
+            <img style="float: left;" src="img/videoicon.png" alt="">
+            &nbsp;Media Player - goldenglow.mp4
             <img style="float: right;" src="img/button_3.gif" alt="" class="clickToHide layer3 functionalbutton">
             <img style="float: right;" src="img/button_2.gif" alt="" class="functionalbutton">
             <img style="float: right;" src="img/button_1.gif" alt="" class="functionalbutton">
         </header>
     </div>
 
-    <video controls><!--main content-->
+    <video controls style="max-width: 600px; height: auto; display: block;">
         <source src="https://files.catbox.moe/2jd3sr.mp4" type="video/mp4">
     </video>
 </div>
 
 <!--draggable div (music player)-->
-<div class="container draggable" id="musicplayerwindow" style="position: sticky; top: -1400px; left: 300px;">
+<div class="container draggable" id="musicplayerwindow" style="width: 420px; position: sticky; top: -2000px; left: 200px;">
 
     <!--top bar-->
     <div class="box_header draggable">
         <header>
-            <img style="float: left;" src="img/dronepixel.png" alt="">
-            &nbsp;musicplayer.exe
+            <img style="float: left;" src="img/musicicon.png" alt="">
+            &nbsp;Music Player
             <img style="float: right;" src="img/button_3.gif" alt="" class="clickToHide layer3 functionalbutton">
             <img style="float: right;" src="img/button_2.gif" alt="" class="functionalbutton">
             <img style="float: right;" src="img/button_1.gif" alt="" class="functionalbutton">
@@ -270,10 +269,53 @@ https://adilene.net/ for the music player!
     <script src="musicplayer/musicplayer.js"></script>
 </div>
 
+<!--draggable div (notepad)-->
+<div class="container draggable" id="notepadwindow" style="width: 375px; position: sticky; top: -2400px; left: -100px;">
+    <div class="box_header draggable"><!--top bar-->
+        <header>
+            <img style="float: left;" src="img/notepadicon.png" alt="">
+            &nbsp;todo.txt - Notepad
+            <img style="float: right;" src="img/button_3.gif" alt="" class="clickToHide layer3 functionalbutton">
+            <img style="float: right;" src="img/button_2.gif" alt="" class="functionalbutton">
+            <img style="float: right;" src="img/button_1.gif" alt="" class="functionalbutton">
+        </header>
+    </div>
+
+    <!--Action bar-->
+    <div style="background-color: var(--primary_mid);">
+        <table class="notepad" style="width: auto;">
+            <tr>
+                <th>File</th>
+                <th>Edit</th>
+                <th>Format</th>
+                <th>View</th>
+                <th>Help</th>
+            </tr>
+        </table>
+    </div>
+
+    <!--actual text-->
+    <div style="padding-left: 10px;">
+        <p style="white-space: pre-line; margin: 0;">
+            todo:
+            -add visitor counter
+            -cursor follower
+            -make window buttons work (1/3)
+
+            important:
+            -add content (lol)
+
+
+        </p>
+    </div>
+</div>
+
 <!--bottom right bocchi-->
 <div class="imagebottomright">
-    <img src="img/hitori.png" alt="cute grill" class="clickToHide layer1">
+    <img src="img/hitori.png" alt="cute grill" class="clickToHide layer1" style="position: fixed; right: 0px; bottom: -5px; z-index: 10;">
 </div>
+
+<!-- scripts -->
 
 <!-- click to hide script-->
 <script>
@@ -293,17 +335,17 @@ https://adilene.net/ for the music player!
         });
     });
 </script>
+
 <!-- makes draggable windows appear on top when clicked-->
 <script>
-    document.querySelectorAll('.container.draggable').forEach(function (div) {
-        div.addEventListener('mousedown', function () {
-            document.querySelectorAll('.container.draggable').forEach(function (d) {
-                d.style.zIndex = "1";  // Reset all z-index to 1
-            });
-            // Set the z-index of the clicked div to a higher value
-            this.style.zIndex = "10";
+    let startz = 10;
+
+    document.querySelectorAll('.container.draggable').forEach(div => {
+        div.addEventListener('mousedown', () => {
+            div.style.zIndex = String(++startz);
         });
     });
 </script>
+
 </body>
 </html>
