@@ -299,7 +299,7 @@ https://adilene.net/ for the music player!
     <div class="box_header draggable"><!--top bar-->
         <header>
             <img style="float: left;" src="img/notepadicon.png" alt="">
-            &nbsp;Nekomail
+            &nbsp;Nekomail - New Message
             <img style="float: right;" src="img/button_3.gif" alt="" class="clickToHide layer3 functionalbutton">
             <img style="float: right;" src="img/button_2.gif" alt="" class="functionalbutton">
             <img style="float: right;" src="img/button_1.gif" alt="" class="functionalbutton">
@@ -311,17 +311,18 @@ https://adilene.net/ for the music player!
         <table class="notepad" style="width: auto;">
             <tr>
                 <th style="filter: brightness(115%)">Compose</th>
-                <th>Inbox</th>
+                <th><a href="/pages/guestbook.html" target="_blank" style="color: var(--tertiary)">Inbox</a></th>
                 <th>Sent</th>
-                <th>Drafts</th>
                 <th>Junk</th>
                 <th>Trash</th>
+                <th><a href="https://atabook.org/" target="_blank" style="color: var(--tertiary)">新book</a></th>
             </tr>
         </table>
     </div>
 
     <!-- guestbook div -->
-    <!-- finalwidth, finalheight-->
+    <!-- width: finalwidth -->
+    <!-- height: finalheight-->
     <div style="
     width: 380px;
     height: 360px;
@@ -330,14 +331,15 @@ https://adilene.net/ for the music player!
     margin: 10px;">
         <!-- guestbook iframe -->
         <!-- width: finalwidth, lefthide, righthide -->
-        <!-- height: finalheight, tophide, bottomhide -->
+        <!-- height: finalheight, tophide, bottomhideORbignumbertopreventscrolling -->
         <!-- transform: -lefthide, -tophide, -->
-        <iframe id="donotscroll" src="https://nekosfyi.atabook.org"style="
+        <iframe src="https://nekosfyi.atabook.org"style="
         width: calc(380px + 15px + 15px);
-        height: calc(360px + 90px + 85px);
+        height: calc(360px + 90px + 99999999px);
         border:none;
         overflow: hidden;
-        transform: translate(-15px, -90px);"></iframe>
+        transform: translate(-15px, -90px);">
+        </iframe>
     </div>
 </div>
 
