@@ -7,9 +7,9 @@ async function loadLayoutParts() {
     //gets gets base layout files
     try {
         const [header, aside, footer] = await Promise.all([
-            fetch('/html/baselayout/header.html').then(res => res.text()),
-            fetch('/html/baselayout/sidebar.html').then(res => res.text()),
-            fetch('/html/baselayout/footer.html').then(res => res.text()),
+            fetch('/baselayout/header.html').then(res => res.text()),
+            fetch('/baselayout/sidebar.html').then(res => res.text()),
+            fetch('/baselayout/footer.html').then(res => res.text()),
         ]);
 
         //sets previous components using base layout files
