@@ -310,9 +310,9 @@ https://adilene.net/ for the music player!
     <div style="background-color: var(--primary_mid);">
         <table class="notepad" style="width: auto;">
             <tr>
-                <th style="filter: brightness(115%)">Inbox</th>
+                <th style="filter: brightness(115%)">Compose</th>
+                <th>Inbox</th>
                 <th>Sent</th>
-                <th>Archive</th>
                 <th>Drafts</th>
                 <th>Junk</th>
                 <th>Trash</th>
@@ -320,9 +320,24 @@ https://adilene.net/ for the music player!
         </table>
     </div>
 
-    <!--actual text-->
-    <div style="padding-left: 5px; padding-top: 5px;">
-        <iframe src="https://nekosfyi.atabook.org" style="height: 600px; width: 385px;"></iframe>
+    <!-- guestbook div -->
+    <!-- finalwidth, finalheight-->
+    <div style="
+    width: 380px;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;">
+        <!-- guestbook iframe -->
+        <!-- width: finalwidth, lefthide, righthide -->
+        <!-- height: finalheight, tophide, bottomhide -->
+        <!-- transform: -lefthide, -tophide, -->
+        <iframe id="donotscroll" src="https://nekosfyi.atabook.org"style="
+        width: calc(380px + 15px + 15px);
+        height: calc(360px + 90px + 85px);
+        border:none;
+        overflow: hidden;
+        transform: translate(-15px, -90px);"></iframe>
     </div>
 </div>
 
