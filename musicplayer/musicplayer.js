@@ -78,7 +78,7 @@ let track_list = [
         name: "Sebatas Video Call",
         artist:"Kobo Kanaeru",
         image:"https://files.catbox.moe/ue2cwb.jpg",
-        path: "https://files.catbox.moe/e6da8x.mp3",
+        path: "https://files.catbox.moe/m5ep2x.mp3",
     },
     {
         name: "Routine",
@@ -90,7 +90,7 @@ let track_list = [
         name: "Drop Pop Candy",
         artist:"Reol",
         image:"https://files.catbox.moe/g0v380.jpg",
-        path: "https://files.catbox.moe/oamv16.mp3",
+        path: "https://files.catbox.moe/yqs2q7.mp3",
     },
     {
         name: "Divinity",
