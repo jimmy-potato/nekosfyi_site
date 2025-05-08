@@ -11,8 +11,9 @@ https://adilene.net/ for the music player!
     <link rel="stylesheet" href="/css/cheesecake_style.css">
     <script src="/baselayout/layout.js"></script>
 
-    <title>Welcome to nekos.fyi</title>
+    <title>home - nekos.fyi</title>
     <link rel="icon" type="image/x-icon" href="/img/dronepixel.png">
+
     <!-- These 2 are for music player (symbols, style)-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="/musicplayer/style.css" rel="stylesheet">
@@ -47,6 +48,14 @@ https://adilene.net/ for the music player!
             });
         });
     </script>
+    <script>
+        $(function() {
+            $('#emailwindow').draggable({
+                handle: '.box_header.draggable',
+                cancel: 'img.functionalbutton'
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -59,10 +68,10 @@ https://adilene.net/ for the music player!
     <aside class="fromLayout"></aside>
 
     <main>
-        <h2 style = "text-align:center;">Welcome to my website (v1.3.0)</h2>
-        <p style = "text-align:center;"> Website born 2025.05.06</p>
-        <p style = "text-align:center;"> I have no idea what I'm doing.</p>
-        <p style = "text-align:center;"> See the madness at <a href="https://github.com/jimmy-potato/jimmy-potato.github.io">github</a> </p>
+        <h2 style = "text-align:center;">Welcome to my website (v0.4.0)</h2>
+        <p> Website born 2025.05.02</p>
+        <p> I have no idea what I'm doing. This is my first website.</p>
+        <p> Tested on Firefox @ 2560 x 1440, but any width above 1250p should completely work.</p>
         <table>
             <tr>
                 <th>Cell 1</th>
@@ -282,6 +291,38 @@ https://adilene.net/ for the music player!
 
 
         </p>
+    </div>
+</div>
+
+<!--draggable div (email)-->
+<div class="container draggable" id="emailwindow" style="width: 400px; height: auto; position: sticky; top: -2400px; left: -100px;">
+    <div class="box_header draggable"><!--top bar-->
+        <header>
+            <img style="float: left;" src="img/notepadicon.png" alt="">
+            &nbsp;Nekomail
+            <img style="float: right;" src="img/button_3.gif" alt="" class="clickToHide layer3 functionalbutton">
+            <img style="float: right;" src="img/button_2.gif" alt="" class="functionalbutton">
+            <img style="float: right;" src="img/button_1.gif" alt="" class="functionalbutton">
+        </header>
+    </div>
+
+    <!--Action bar-->
+    <div style="background-color: var(--primary_mid);">
+        <table class="notepad" style="width: auto;">
+            <tr>
+                <th>Inbox</th>
+                <th>Sent</th>
+                <th>Archive</th>
+                <th>Drafts</th>
+                <th>Junk</th>
+                <th>Trash</th>
+            </tr>
+        </table>
+    </div>
+
+    <!--actual text-->
+    <div style="padding-left: 10px;">
+        <iframe src="https://nekosfyi.atabook.org" style="height: 600px; width: 600px;"></iframe>
     </div>
 </div>
 
