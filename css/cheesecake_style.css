@@ -166,6 +166,7 @@ aside {
 
 .container.draggable {
     width: 800px;
+    z-index: 10;
 }
 
 main {
