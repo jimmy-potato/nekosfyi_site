@@ -105,7 +105,7 @@ input[type=range]::-moz-range-thumb{
 .track-item {
     text-align: left;
     padding: 10px 5px;
-    cursor: url("../cursor/ggcursor.png"), pointer;
+    cursor: url("../img/cursor/ggcursor.png"), pointer;
 }
 
 .track-item:hover {
