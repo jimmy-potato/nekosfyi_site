@@ -15,7 +15,7 @@
 }
 
 body {
-    cursor: url('/cursor/dronecursor.png') 0 0, default;
+    cursor: url('/img/cursor/dronecursor.png') 0 0, default;
     background: var(--secondary);
     background-image: url('/img/bg.gif');
     color: var(--tertiary);
@@ -29,7 +29,7 @@ a {
     color: var(--link);
     /* Adds a smooth effect to link hover. */
     transition: 0.1s all ease-in-out;
-    cursor: url('/cursor/link.png') 0 0, pointer;
+    cursor: url('/img/cursor/link.png') 0 0, pointer;
 }
 
 a:hover {
@@ -98,13 +98,13 @@ table.notepad th{
 /* Changes the brightness of the fake buttons on hover. Also changes the cursor. */
 table.notepad th:hover {
     filter: brightness(107%);
-    cursor: url('/cursor/ggcursor.png'), pointer;
+    cursor: url('/img/cursor/ggcursor.png'), pointer;
 }
 
 /* Darkens and saturates the buttons on click. Also changes the cursor. */
 table.notepad th:active {
     filter: brightness(93%) saturate(125%);
-    cursor: url('/cursor/ggcursor.png'), pointer;
+    cursor: url('/img/cursor/ggcursor.png'), pointer;
 }
 
 /* List Styling */
@@ -188,20 +188,20 @@ main {
     line-height: 20px;
 }
 .box_header.draggable {
-    cursor: url('/cursor/move.png') 16 16, move;
+    cursor: url('/img/cursor/move.png') 16 16, move;
 }
 
 
 /* Changes the brightness of the fake buttons on hover. Also changes the cursor. */
 img.functionalbutton:hover {
     filter: brightness(110%);
-    cursor: url('/cursor/ggcursor.png'), pointer;
+    cursor: url('/img/cursor/ggcursor.png'), pointer;
 }
 
 /* Darkens and saturates the buttons on click. Also changes the cursor. */
 img.functionalbutton:active {
     filter: brightness(97%) saturate(125%);
-    cursor: url('/cursor/ggcursor.png'), pointer;
+    cursor: url('/img/cursor/ggcursor.png'), pointer;
 }
 
 /* Mobile Support */
