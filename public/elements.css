@@ -1,0 +1,59 @@
+/*
+    Don't use this file to edit your site style! Create a different CSS file for that.
+    This file defines how custom elements (like sitebox) will look like.
+    Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion!
+*/
+/* If you can see this then this is the test css and it's not working*/
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
+.site-box {
+    image-rendering: pixelated;
+    background-image: url(https://jimmypotato.nekoweb.org/img/sitebox/siteboxbackground.png); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    cursor: url(https://jimmypotato.nekoweb.org/img/cursor/link.png), auto;
+    background-repeat: no-repeat;
+    font-size: 0px;
+}
+.site-box > * {
+    cursor: url(https://jimmypotato.nekoweb.org/img/cursor/link.png), auto;
+}
+.site-box > a > p {
+    font-size: 0px
+}
+.site-box > a > span {
+    font-size: 0px
+}
+.site-box .sitefeature {
+    border: none;
+    visibility:hidden;
+    z-index:1;
+}
+.site-box .follow {
+    content:url(https://jimmypotato.nekoweb.org/img/sitebox/followadd.png);
+    cursor: url(https://jimmypotato.nekoweb.org/img/cursor/ggcursor.png), auto;
+    padding:0px;
+    left:118px;
+    bottom:143px;
+}
+.site-box .following {
+    content:url(https://jimmypotato.nekoweb.org/img/sitebox/followadded.png);
+    cursor: url(https://jimmypotato.nekoweb.org/img/cursor/ggcursor.png), auto;
+    padding:0px;
+    left:118px;
+    bottom:143px;
+}
+
+/* Style for your post box (must start with ".post-box") */
+.post-box {
+    background-color: #fff2cc;
+    border: 4px solid #ecbfa6;
+    padding: 15px;
+    border-radius: 5px;
+    color: #634c53;
+    font-weight: normal;
+}
+
+.post-box .post-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
