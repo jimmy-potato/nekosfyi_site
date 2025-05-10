@@ -1,16 +1,10 @@
-/*
-    Don't use this file to edit your site style! Create a different CSS file for that.
-    This file defines how custom elements (like sitebox) will look like.
-    Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion!
-*/
-/* If you can see this then this is the test css and it's not working*/
-/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box {
     image-rendering: pixelated;
-    background-image: url(https://jimmypotato.nekoweb.org/img/sitebox/siteboxbackground.png); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    background-image: url(https://jimmypotato.nekoweb.org/img/sitebox/siteboxbackground.png);
     cursor: url(https://jimmypotato.nekoweb.org/img/cursor/link.png), auto;
     background-repeat: no-repeat;
     font-size: 0px;
+    filter: drop-shadow(10px 10px 7px #000000);
 }
 .site-box > * {
     cursor: url(https://jimmypotato.nekoweb.org/img/cursor/link.png), auto;
@@ -41,7 +35,6 @@
     bottom:143px;
 }
 
-/* Style for your post box (must start with ".post-box") */
 .post-box {
     background-color: #fff2cc;
     border: 4px solid #ecbfa6;
