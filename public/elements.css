@@ -6,6 +6,23 @@
     font-size: 0px;
     filter: drop-shadow(10px 10px 7px #000000);
 }
+.site-box:hover:before{
+    content: url(https://jimmypotato.nekoweb.org/img/sitebox/bg3.png);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    image-rendering: pixelated;
+}
+/* .site-box:hover:after {
+  content: url(https://jimmypotato.nekoweb.org/img/sitebox/mikutransparent.png);
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  image-rendering: pixelated;
+} */
+/* .site-box:hover:after{
+	content: url(https://scythe.nekoweb.org/enestitebox3-resize...png);
+} */
 .site-box > * {
     cursor: url(https://jimmypotato.nekoweb.org/img/cursor/link.png), auto;
 }
@@ -26,6 +43,7 @@
     padding:0px;
     left:118px;
     bottom:143px;
+    z-index: 100 !important;
 }
 .site-box .following {
     content:url(https://jimmypotato.nekoweb.org/img/sitebox/followadded.png);
@@ -33,6 +51,7 @@
     padding:0px;
     left:118px;
     bottom:143px;
+    z-index: 100 !important;
 }
 
 .post-box {
