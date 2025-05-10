@@ -41,62 +41,62 @@ let track_list = [
     {
         name:"Misty Memory (Day Version)",
         artist:"Monster Siren Records",
-        image:"https://files.catbox.moe/uvw3gd.jpg",
-        path:"https://files.catbox.moe/z9zuz6.mp3"
+        image:"/musicplayer/songs/mistymemory.jpg",
+        path:"/musicplayer/songs/mistymemory.mp3",
     },
     {
         name:"mede:mede",
         artist:"Reol",
-        image:"https://files.catbox.moe/lec80s.jpg",
-        path:"https://files.catbox.moe/hhiitv.mp3"
+        image:"/musicplayer/songs/medemede.jpg",
+        path:"/musicplayer/songs/medemede.mp3"
     },
     {
         name:"SloWMoTIoN",
         artist:"PinocchioP",
-        image:"https://files.catbox.moe/bfcs3n.jpg",
-        path:"https://files.catbox.moe/37kvor.mp3"
+        image:"/musicplayer/songs/slowmotion.jpg",
+        path:"/musicplayer/songs/slowmotion.mp3"
     },
     {
         name: "ひとり旅",
         artist:"瀬名航 ft. 鎖那",
-        image:"https://files.catbox.moe/l41i1m.jpg",
-        path: "https://files.catbox.moe/sbb6v2.mp3",
+        image:"/musicplayer/songs/hitoritabi.jpg",
+        path: "/musicplayer/songs/hitoritabi.mp3",
     },
     {
         name: "虹を編めたら",
         artist:"Fhana",
-        image:"https://files.catbox.moe/whawa9.jpg",
-        path: "https://files.catbox.moe/q1ioeo.mp3",
+        image:"/musicplayer/songs/nijiwoametara.jpg",
+        path: "/musicplayer/songs/nijiwoametara.mp3",
     },
     {
         name: "しあわせになんてならないで",
         artist:"Aiobahn ft. ナナヲアカリ",
-        image:"https://files.catbox.moe/vx4ord.jpg",
-        path: "https://files.catbox.moe/8g8qul.mp3",
+        image:"/musicplayer/songs/shiawaseninantenaranaide.jpg",
+        path: "/musicplayer/songs/shiawaseninantenaranaide.mp3",
     },
     {
         name: "Sebatas Video Call",
         artist:"Kobo Kanaeru",
-        image:"https://files.catbox.moe/ue2cwb.jpg",
-        path: "https://files.catbox.moe/m5ep2x.mp3",
+        image:"/musicplayer/songs/sebatasvideocall.jpg",
+        path: "/musicplayer/songs/sebatasvideocall.mp3",
     },
     {
         name: "Routine",
         artist:"Silent Siren",
-        image:"https://files.catbox.moe/gtdalz.jpg",
-        path: "https://files.catbox.moe/unjgu9.mp3",
+        image:"/musicplayer/songs/routine.jpg",
+        path: "/musicplayer/songs/routine.mp3",
     },
     {
         name: "Drop Pop Candy",
         artist:"Reol",
-        image:"https://files.catbox.moe/g0v380.jpg",
-        path: "https://files.catbox.moe/yqs2q7.mp3",
+        image:"/musicplayer/songs/droppopcandy.jpg",
+        path: "/musicplayer/songs/droppopcandy.mp3",
     },
     {
         name: "Divinity",
         artist:"Porter Robinson ft. Amy Millan",
-        image:"https://files.catbox.moe/zn43fb.jpg",
-        path: "https://files.catbox.moe/7u2hew.mp3",
+        image:"/musicplayer/songs/divinity.jpg",
+        path: "/musicplayer/songs/divinity.mp3",
     },
 ];
 
