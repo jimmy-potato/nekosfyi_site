@@ -1,3 +1,4 @@
 *.xml
 *.patch
 /draggable windows/
+/.idea/
