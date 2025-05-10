@@ -1,7 +1,3 @@
 *.xml
 *.patch
 /draggable windows/
-CNAME
-README.md
-robots.txt
-*.pdn
