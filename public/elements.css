@@ -1,10 +1,12 @@
+/*123*/
 .site-box {
     image-rendering: pixelated;
-    background-image: url(https://jimmypotato.nekoweb.org/img/sitebox/siteboxbackground.png);
+    background-image: url(https://jimmypotato.nekoweb.org/img/sitebox/siteboxbackground_2.png);
     cursor: url(https://jimmypotato.nekoweb.org/img/cursor/link.png), auto;
     background-repeat: no-repeat;
     font-size: 0px;
     filter: drop-shadow(10px 10px 7px #000000);
+    z-index: 6969;
 }
 .site-box:hover:before{
     content: url(https://jimmypotato.nekoweb.org/img/sitebox/bg3.png);
@@ -13,16 +15,7 @@
     left: 0px;
     image-rendering: pixelated;
 }
-/* .site-box:hover:after {
-  content: url(https://jimmypotato.nekoweb.org/img/sitebox/mikutransparent.png);
-  position: absolute;
-  top: 20px;
-  left: -10px;
-  image-rendering: pixelated;
-} */
-/* .site-box:hover:after{
-	content: url(https://scythe.nekoweb.org/enestitebox3-resize...png);
-} */
+
 .site-box > * {
     cursor: url(https://jimmypotato.nekoweb.org/img/cursor/link.png), auto;
 }
